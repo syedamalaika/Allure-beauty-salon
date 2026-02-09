@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Shawarma King - Authentic Middle Eastern Cuisine</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-white shadow-sm py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-uppercase" href="#">
+                <i class="fa-solid fa-crown text-primary me-2"></i> Shawarma <span class="text-primary">King</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center fw-semibold">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Our Story</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Visit Us</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a href="#menu" class="btn btn-primary rounded-pill px-4 text-white">Order Online</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero-section d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <span class="badge bg-secondary text-white mb-3 px-3 py-2 fw-light ls-1">EST. 1995</span>
+                    <h1 class="display-3 fw-bold mb-4 text-dark lh-sm">
+                        Authentic Taste, <br> <span class="text-primary">Modern Twist.</span>
+                    </h1>
+                    <p class="lead text-muted mb-5">
+                        Experience the finest shawarma in town. Marinated to perfection, grilled slowly, and served with
+                        love and fresh ingredients.
+                    </p>
+                    <div class="d-flex gap-3">
+                        <a href="#menu" class="btn btn-primary btn-lg rounded-pill px-5 shadow-sm">View Menu</a>
+                        <a href="#about" class="btn btn-outline-dark btn-lg rounded-pill px-5">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center position-relative">
+                    <div class="blob-bg"></div>
+                    <img src="https://images.unsplash.com/photo-1626804475297-411db8e3a479?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Delicious Shawarma" class="img-fluid hero-image position-relative rounded-4 shadow-lg">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Freshness Promise -->
+    <section class="py-5 bg-light-pattern">
+        <div class="container py-4">
+            <div class="row text-center g-4">
+                <div class="col-md-4">
+                    <div class="p-4 bg-white rounded-4 shadow-sm h-100 hover-lift">
+                        <div class="icon-box mb-3 mx-auto bg-primary-light text-primary rounded-circle">
+                            <i class="fa-solid fa-leaf"></i>
+                        </div>
+                        <h4 class="fw-bold">Fresh Ingredients</h4>
+                        <p class="text-muted small">We source fresh vegetables daily to crisp perfection in every bite.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 bg-white rounded-4 shadow-sm h-100 hover-lift">
+                        <div class="icon-box mb-3 mx-auto bg-primary-light text-primary rounded-circle">
+                            <i class="fa-solid fa-fire-burner"></i>
+                        </div>
+                        <h4 class="fw-bold">Slow Grilled</h4>
+                        <p class="text-muted small">Our meat is marinated for 24 hours and slow-cooked for tender
+                            juiciness.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 bg-white rounded-4 shadow-sm h-100 hover-lift">
+                        <div class="icon-box mb-3 mx-auto bg-primary-light text-primary rounded-circle">
+                            <i class="fa-solid fa-bread-slice"></i>
+                        </div>
+                        <h4 class="fw-bold">Handmade Bread</h4>
+                        <p class="text-muted small">Hot, fluffy pita bread baked fresh in our stone oven every hour.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-5 section-bg">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h5 class="text-secondary fw-bold text-uppercase ls-2">Our Menu</h5>
+                <h2 class="display-5 fw-bold text-dark">Taste the Tradition</h2>
+            </div>
+
+            <!-- Tabs -->
+            <ul class="nav nav-pills justify-content-center mb-5" id="menu-tabs">
+                <li class="nav-item mx-2">
+                    <button class="nav-link active rounded-pill px-4" data-category="wraps">Wraps</button>
+                </li>
+                <li class="nav-item mx-2">
+                    <button class="nav-link rounded-pill px-4" data-category="platters">Platters</button>
+                </li>
+                <li class="nav-item mx-2">
+                    <button class="nav-link rounded-pill px-4" data-category="sides">Sides</button>
+                </li>
+            </ul>
+
+            <!-- Grid -->
+            <div class="row g-4" id="menu-grid">
+                <!-- Javascript Injection -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-5 bg-white">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h5 class="text-primary fw-bold text-uppercase ls-2">Visual Feast</h5>
+                <h2 class="display-5 fw-bold text-dark">Our Gallery</h2>
+            </div>
+            <div class="row g-3">
+                <div class="col-md-4 col-6">
+                    <img src="https://images.unsplash.com/photo-1541518763669-27fef04b14ea?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                        class="img-fluid rounded-3 shadow-sm hover-lift w-100" alt="Restaurant Interior">
+                </div>
+                <div class="col-md-4 col-6">
+                    <img src="https://images.unsplash.com/photo-1561043433-aaf687c4cf04?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                        class="img-fluid rounded-3 shadow-sm hover-lift w-100" alt="Fresh Shawarma">
+                </div>
+                <div class="col-md-4 col-12">
+                    <img src="https://images.unsplash.com/photo-1529193591184-b1d580690dd0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                        class="img-fluid rounded-3 shadow-sm hover-lift w-100 h-100 object-fit-cover" alt="Spices">
+                </div>
+                <div class="col-md-6 col-6">
+                    <img src="https://images.unsplash.com/photo-1594834749740-74b3f6764be4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        class="img-fluid rounded-3 shadow-sm hover-lift w-100" alt="Platter">
+                </div>
+                <div class="col-md-6 col-6">
+                    <img src="https://images.unsplash.com/photo-1550950158-d0d960dff51b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        class="img-fluid rounded-3 shadow-sm hover-lift w-100" alt="Grill">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark-blue text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <h3 class="fw-bold mb-3"><i class="fa-solid fa-crown text-primary me-2"></i> Shawarma King</h3>
+                    <p class="text-light-50">Bringing the authentic flavors of the Middle East to your table. Tradition
+                        in every bite.</p>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-3 text-primary">Quick Links</h5>
+                    <ul class="list-unstyled text-light-50">
+                        <li class="mb-2"><a href="#home" class="text-decoration-none text-white hover-primary">Home</a>
+                        </li>
+                        <li class="mb-2"><a href="#menu" class="text-decoration-none text-white hover-primary">Menu</a>
+                        </li>
+                        <li class="mb-2"><a href="#about" class="text-decoration-none text-white hover-primary">Our
+                                Story</a></li>
+                        <li class="mb-2"><a href="#contact"
+                                class="text-decoration-none text-white hover-primary">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-3 text-primary">Visit Us</h5>
+                    <ul class="list-unstyled text-light-50">
+                        <li class="mb-2"><i class="fa-solid fa-location-dot me-2"></i> 45 Spice Market St.</li>
+                        <li class="mb-2"><i class="fa-solid fa-phone me-2"></i> (123) 456-7890</li>
+                        <li class="mb-2"><i class="fa-solid fa-clock me-2"></i> Daily: 11AM - 11PM</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="border-secondary my-4">
+            <div class="text-center text-light-50 small">
+                &copy; 2024 The Shawarma King. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
